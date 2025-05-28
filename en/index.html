@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>History of Portugal</title>
+  <link rel="stylesheet" href="../assets/css/style.css">
+  <style>
+    body {
+      font-family: 'Segoe UI', 'Montserrat', Arial, sans-serif;
+      background: url('../assets/img/pergaminho.jpg') repeat center center fixed, #f7f2e7;
+      background-size: cover;
+      color: #1a365d;
+      margin: 0;
+      min-height: 100vh;
+    }
+    header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 1.3rem 2rem;
+      background: rgba(26, 54, 93, 0.82);
+      color: #ffcc49;
+      border-bottom: 4px solid #ffcc49;
+    }
+    .logo {
+      font-size: 2.1rem;
+      font-weight: bold;
+      letter-spacing: 2px;
+    }
+    .language-switch {
+      display: flex;
+      gap: 1rem;
+    }
+    .lang-btn {
+      background: none;
+      border: none;
+      cursor: pointer;
+      font-size: 1.2rem;
+      color: #ffcc49;
+      transition: transform 0.2s;
+    }
+    .lang-btn:hover {
+      transform: scale(1.11);
+      text-decoration: underline;
+    }
+    main {
+      max-width: 990px;
+      margin: 1.5rem auto;
+      background: rgba(255, 255, 255, 0.95);
+      box-shadow: 0 0 12px #d1b86970;
+      border-radius: 16px;
+      padding: 1.6rem 1.1rem 2rem 1.1rem;
+      border: 2px solid #ffcc49;
+    }
+    h1 {
+      font-size: 2.05rem;
+      margin-bottom: 0.7rem;
+      color: #1a365d;
+      text-shadow: 1px 1px 0 #ffcc4970;
+    }
+    .eras {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 1.05rem;
+      margin-top: 1.2rem;
+      margin-bottom: 1.4rem;
+    }
+    .era-card {
+      background: #e9e4d1;
+      border: 2px solid #1a365d;
+      border-radius: 13px;
+      box-shadow: 0 2px 7px #1a365d15;
+      transition: box-shadow 0.16s, transform 0.16s;
+      cursor: pointer;
+      color: #1a365d;
+      font-size: 1.06rem;
+      font-weight: bold;
+      text-align: center;
+      min-height: 57px;
+      height: 60px;
+      padding: 0.4rem 0.1rem;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    .era-card strong { font-size: 1.02em; }
+    .era-card:hover { box-shadow: 0 4px 15px #1a365d33; background: #f5e4a6; }
+
+    .temas-extra {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 1.05rem;
+      margin-top: 1.3rem;
+      margin-bottom: 0.7rem;
+    }
+    .extra-card {
+      background: #e9e4d1;
+      border: 2px solid #1a365d;
+      border-radius: 13px;
+      box-shadow: 0 2px 7px #1a365d15;
+      transition: box-shadow 0.16s, transform 0.16s;
+      cursor: pointer;
+      color: #1a365d;
+      font-size: 0.97rem;
+      text-align: center;
+      min-height: 68px;
+      padding: 0.67rem 0.15rem 0.67rem 0.15rem;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+    .extra-card strong { font-size: 1.01em; margin-bottom: 0.16em; }
+    .extra-card:hover { box-shadow: 0 4px 15px #1a365d33; background: #f5e4a6; }
+
+    .curiosidades {
+      background: #ffcc4966;
+      border-radius: 12px;
+      padding: 1.1rem;
+      margin-top: 2rem;
+      color: #1a365d;
+      font-size: 1.04rem;
+      box-shadow: 0 2px 8px #1a365d22;
+    }
+    footer {
+      text-align: center;
+      padding: 1.1rem 0 0.6rem 0;
+      background: #1a365d;
+      color: #ffcc49;
+      border-top: 3px solid #ffcc49;
+      font-size: 1.01rem;
+      margin-top: 2rem;
+      letter-spacing: 1px;
+    }
+    @media (max-width: 900px) {
+      .eras, .temas-extra { grid-template-columns: 1fr 1fr; }
+      main { padding: 1rem 0.2rem; }
+    }
+    @media (max-width: 600px) {
+      .eras, .temas-extra { grid-template-columns: 1fr; }
+      .era-card, .extra-card { min-height: 40px; height: auto; font-size: 0.93rem; }
+      .logo { font-size: 1.14rem; }
+      header { padding: 0.7rem 0.6rem; }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="logo">History of Portugal</div>
+    <nav class="language-switch">
+      <a class="lang-btn" href="/pt/index.html"><img src="../assets/img/pt-flag.png" alt="Portuguese" width="22"> PT</a>
+      <a class="lang-btn" href="/en/index.html"><img src="../assets/img/en-flag.png" alt="English" width="22"> EN</a>
+    </nav>
+  </header>
+  <main>
+    <h1>Welcome to the History of Portugal</h1>
+    <p>
+      Discover the origins and the key moments that shaped our country — from the legends of the first kings to the Age of Discoveries, from the building of an empire to the struggle for freedom.<br><br>
+      Here you will find engaging articles, fun facts, images, and resources to explore the richness of our history, in a simple and visual way.<br><br>
+      Get ready to travel through time and discover Portugal's unique role in the world!
+    </p>
+    <!-- 8 eras -->
+    <section class="eras">
+      <div class="era-card" onclick="location.href='foundation.html'"><strong>Foundation of the Kingdom</strong></div>
+      <div class="era-card" onclick="location.href='avis.html'"><strong>House of Avis & Expansion</strong></div>
+      <div class="era-card" onclick="location.href='discoveries.html'"><strong>Age of Discoveries</strong></div>
+      <div class="era-card" onclick="location.href='iberian-union.html'"><strong>Iberian Union</strong></div>
+      <div class="era-card" onclick="location.href='restoration.html'"><strong>Restoration of Independence</strong></div>
+      <div class="era-card" onclick="location.href='liberalism.html'"><strong>19th Century & Liberalism</strong></div>
+      <div class="era-card" onclick="location.href='republic.html'"><strong>Republic & Estado Novo</strong></div>
+      <div class="era-card" onclick="location.href='april25.html'"><strong>25th of April & Democracy</strong></div>
+    </section>
+
+    <!-- Fun facts -->
+    <section class="curiosidades">
+      <strong>Did you know...?</strong>
+      <ul>
+        <li>The first Portuguese flag had a blue cross on a white background — symbol of the faith of the first king, Afonso Henriques.</li>
+        <li>Portugal has the oldest borders in Europe, practically unchanged since 1297!</li>
+        <li>The Portuguese Empire was the world’s first global empire and lasted more than 500 years.</li>
+      </ul>
+    </section>
+
+    <!-- Special themes -->
+    <section class="temas-extra">
+      <div class="extra-card" onclick="location.href='heroes.html'">
+        <strong>Heroes of Portugal</strong>
+        <span>Discover the great national heroes — from founders to explorers and scientists.</span>
+      </div>
+      <div class="extra-card" onclick="location.href='legends.html'">
+        <strong>Legends & Fantasies</strong>
+        <span>Gambuzinos, Adamastor, enchanted Moors, werewolves, and other stories from our folklore.</span>
+      </div>
+      <div class="extra-card" onclick="location.href='mysteries.html'">
+        <strong>Mysteries of Portugal</strong>
+        <span>Enigmas, mystical places and everything that still intrigues Portugal.</span>
+      </div>
+      <div class="extra-card" onclick="location.href='recipes.html'">
+        <strong>Ancient Recipes</strong>
+        <span>Centuries-old flavors: learn traditional dishes and convent sweets, almost forgotten!</span>
+      </div>
+    </section>
+  </main>
+  <footer>
+    Made with ❤️ in Portugal – 2025<br>
+    Images: Wikimedia Commons, AI<br>
+    <a href="/en/contact.html" style="color:#ffcc49;">Suggestions or corrections? Contact us!</a>
+  </footer>
+</body>
+</html>
