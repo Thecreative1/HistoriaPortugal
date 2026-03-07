@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>História de Portugal - Aventura Rústica</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', Arial, sans-serif;
+      background: linear-gradient(180deg, #20435f, #112739);
+      color: #f6dd9c;
+    }
+    .wrapper {
+      max-width: 980px;
+      margin: 1.5rem auto;
+      background: rgba(15, 32, 44, 0.9);
+      border: 2px solid #d6a84c;
+      border-radius: 14px;
+      box-shadow: 0 14px 32px rgba(0,0,0,0.3);
+      padding: 1rem 1rem 1.3rem;
+    }
+    h1 { margin: 0.3rem 0 0.2rem; font-size: 1.8rem; }
+    p { margin: 0.4rem 0; color: #f3e8c9; }
+    .hud {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.8rem;
+      margin: 0.9rem 0;
+      font-weight: bold;
+    }
+    .hud span {
+      background: #f7e2b4;
+      color: #1f344a;
+      border-radius: 999px;
+      padding: 0.35rem 0.8rem;
+      border: 1px solid #8e6430;
+    }
+    #statusText {
+      display: inline-block;
+      margin-bottom: 0.65rem;
+      color: #f9dda2;
+    }
+    canvas {
+      width: 100%;
+      border: 3px solid #d6a84c;
+      border-radius: 10px;
+      background: #a7dde5;
+      image-rendering: pixelated;
+    }
+    .actions {
+      margin-top: 1rem;
+      display: flex;
+      gap: 0.8rem;
+      flex-wrap: wrap;
+    }
+    a, button {
+      border: 2px solid #d6a84c;
+      background: #f8e2ad;
+      color: #183146;
+      font-weight: bold;
+      padding: 0.6rem 1rem;
+      border-radius: 10px;
+      text-decoration: none;
+      cursor: pointer;
+    }
+    button:hover, a:hover { background: #ffd36d; }
+  </style>
+</head>
+<body>
+  <div class="wrapper">
+    <h1>Aventura Rústica: Tesouros de Portugal</h1>
+    <p>Um mini-jogo 2D ao estilo plataforma: salta, recolhe moedas e evita barris para chegar à Quinta do Tesouro.</p>
+    <p>Controlo: <strong>↑ ou Espaço</strong> para saltar, <strong>←/→</strong> para ajustar movimento.</p>
+
+    <div class="hud">
+      <span>Pontuação: <strong id="scoreValue">0</strong></span>
+      <span>Moedas: <strong id="coinValue">0</strong></span>
+      <span>Distância: <strong id="distanceValue">0</strong>m</span>
+    </div>
+    <div id="statusText">Carrega em Espaço para começar a aventura.</div>
+
+    <canvas id="gameCanvas" width="920" height="420" aria-label="Jogo de plataforma"></canvas>
+
+    <div class="actions">
+      <button id="restartBtn" hidden>Recomeçar</button>
+      <a href="/pt/index.html">Voltar ao início</a>
+    </div>
+  </div>
+
+  <script src="../assets/js/rustic-quest.js"></script>
+</body>
+</html>
